@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1,
+        .div2 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        .div1 {
+            background-color: brown;
+        }
+        .div2 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="brown" onclick="changeColRose()"></div>
+    <div class="div2" id="blue" onclick="changeColGreen()"></div>
+    
+
+<script>
+function changeColRose() {
+    let elem1 = document.getElementById("brown");
+    elem1.style.background = '#FF69B4';
+}
+function changeColGreen() {
+    let elem2 = document.getElementById("blue");
+    elem2.style.background = '#3CB371';
+}
+</script>
+</body>
+</html>
